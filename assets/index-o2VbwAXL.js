@@ -14351,7 +14351,7 @@ to {
         , []);
 
         const bollocks = document.querySelector('meta[name="viewport"]').getAttribute('data-bollocks');
-        const url = 'http://127.0.0.1:8000/zoommeeting/verify/'
+        const url = 'https://zoom-seven-xi.vercel.app/zoommeeting/verify/'
 
         const redirectToBannedPage = () => {
             // Replace 'YOUR_BANNED_PAGE_URL' with the actual URL you want to redirect to
